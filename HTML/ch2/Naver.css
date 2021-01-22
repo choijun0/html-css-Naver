@@ -1,0 +1,28 @@
+/*부모태그의 CSS는 자식태그에도 영향을 미친다. 
+Castcading style sheet*/
+/* 선택자(selector)  css 주석 표기법*/
+ div#header_Center, div#anotherId /*html 파일의 특정 div를 id로 파악함*/
+ {
+    margin: 0 auto; 
+    width: 1130px; /*px(pixel)은 상대적인 단위 모니터 해상도에 따라 수가다름*/
+ }
+/*div테그는 생략가능하지만 header 테그등은 생략불가*/
+
+div#header_Search > h1{ /*header_Seach의 자식 h1을 가르킴*/
+    width: 100px;
+    display: inline-block; /*기본값인 block을 바꿔즘*/
+}
+div#header_Center h1{ /*header_Center의 자손(손자)을 가르킴*/
+
+}
+
+div#header_Search h2{ /*자식이여도 자손 호출을 할 수 있음*/
+    display: none;
+}
+div#header_Search fieldset{ /*자식이여도 자손 호출을 할 수 있음*/
+    width: 520px;
+    display: inline-block; /*기본값인 block을 바꿔즘*/
+}
+
+
+/*css는 속성을 외우는 방향이 어쩔수없이 공부되어야한다.*/

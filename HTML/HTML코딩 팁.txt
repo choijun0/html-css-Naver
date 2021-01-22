@@ -1,0 +1,15 @@
+./는 현재폴더안의 파일을 의미함
+
+일반적 통념
+document.head.parentNode.removeChilde(document.head);
+문서 head의 자식을 지웠더니 CSS가 없어짐
+-> CSS는주로 head에 구현
+
+지식인에 준비하지말고 구글에 질문하자. 토익공부!
+
+
+style display
+inline: 해당 영약에 존재하는 것들이 최소한의 공간을 차지, inline-block처럼 가로전체를 차지하지 않지만 
+너비및 높이를 custom지정이 불가하다.
+inline-block: 가로전체를 차지하지않고 높이 너비를 지정이 가능하다. 다른블록과 한 가로에 합쳐질수 있음
+block: 내용에 상관없이 해당구역이 가로전체를 차지한다.
