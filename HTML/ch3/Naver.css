@@ -1,0 +1,104 @@
+/*부모태그의 CSS는 자식태그에도 영향을 미친다. 
+Castcading style sheet*/
+/* 선택자(selector)  css 주석 표기법*/
+
+*{
+    /*모든 테그들에 공통적용*/
+   
+}
+
+
+ div#header_Center, div#anotherId /*html 파일의 특정 div를 id로 파악함*/
+ {
+    margin: 0 auto; 
+    width: 1130px; /*px(pixel)은 상대적인 단위 모니터 해상도에 따라 수가다름*/
+ }
+/*div테그는 생략가능하지만 header 테그등은 생략불가*/
+
+div#header_Search{
+
+}
+
+
+div#header_Search > a{
+    text-decoration: none;
+}
+
+div#header_Search h1{ /*header_Seach의 자식 h1을 가르킴*/
+    width: 220px;
+    height: 53px;
+    display: inline-block; /*기본값인 block을 바꿔즘*/
+    background-image: url(./UI_Image.png);
+    /*background-position: 0px 0px; X , Y*/
+    background-repeat: no-repeat;
+    /*image, position, repeat순으로 입력가능*/
+    background: url(./UI_Image.png) 0px -160px no-repeat;
+    text-indent: 100%; /*텍스트 들여쓰기 100%면 이미지 뒤에 오버플로우*/
+    overflow: hidden;  /*오버플로우는 숨긴다.*/
+    vertical-align: middle;
+    position: relative;
+    top: -4px;
+}
+
+div#header_Search h2{ /*자식이여도 자손 호출을 할 수 있음*/
+    /*display: none; html가독성을 위한 설정 리더기에도 안 읽힘*/
+}
+
+/*검색창*/
+div#header_Search fieldset{ /*자식이여도 자손 호출을 할 수 있음*/
+    width: 582px;
+    height: 52px;
+    display: inline-block; /*기본값인 block을 바꿔즘*/
+    margin-left: 20px; /*up right bottom left / clock direction*/  
+    margin-right: 0px;
+    border: 2px solid #19ce60; /*2px 2px 2px 2px = 2px solid*/
+    padding: 0;
+    vertical-align: middle;
+    position: relative;
+}
+div#header_Search fieldset input{
+    border: none;
+    outline: none;
+    width: 444px;
+    height: 24px;
+    padding: 13px 15px;
+    margin: 1px;
+    font-size: 18px;
+    font-weight: 700;
+    vertical-align: middle;
+}
+
+div#header_Search fieldset button{
+    width: 56px;
+    height: 56px;
+    border: none;
+    padding: 0;
+    background:#03cf5d;
+    position: absolute;
+    top: 0;
+    right: 0;
+    box-sizing: border-box;
+}
+
+span#search-image{
+    background: url(./UI_Image.png);
+    background-position: -180px -386px; /*좌상단 0,0 우하단 -n, -m (n,m은 양수)*/
+    background-repeat: no-repeat;
+    display: inline-block;
+    width: 22px;
+    height: 22px;
+    margin: 17px; /*정확히 정중앙에 위치시키기기 위해 상우하좌 알맞은 margin설정*/ 
+} 
+
+/*클레스 .클래스이름*/
+.blind {
+    position: absolute;
+    clip: rect(0 0 0 0);
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+}
+
+
+/*css는 속성을 외우는 방향이 어쩔수없이 공부되어야한다.*/

@@ -1,0 +1,17 @@
+css우선순위 !important > inline style attribute > id > class & 다른attribute > tag element
+
+한영역의 css의 수치비교를 통해 뭐가우선 적용되는가?
+1. 우선순위가 높은 것들이 있는가 있으면 얼마만큼있는가 룰 적용 금메달x1 > 은메달x9999999999
+은메달 x 12 > 은메달 x 11
+2. 가치가 같다면 뒤에선언된것이 앞에것을 덮어씌움
+
+팁:
+같은 내용을 중복해서 써줘서 우선순위를 높일 수 있다.
+
+firstchild nthchild는 다른attribute에 해당된다.
+
+!important 는 자주 사용안하는게 좋다 무조건 사용한다고 생각하고 쓰기때문에 !important가 
+중복되면 의미가 모색해질수 있기 때문
+
+
+

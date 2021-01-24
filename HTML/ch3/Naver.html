@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="ko">
+<!-- 한글속성 ko-->
+
+<head>
+    <meta charset="utf-8">
+    </meta>
+    <title>네이버</title>
+    <link rel="shortcut icon" type="image/x-icon" href="./logo/favicon.ico">
+    <link rel="stylesheet" href="./Naver.css">
+    <!--html파일이 왕이다 = css파일의 조내여부를 html파일에 알린다.-->
+</head>
+
+<body>
+    <header>
+        <!-- Division 가로줄 전체를 차지한다.-->
+        <div id="header_Center">
+            <!-- 가운데 정렬용 / Parent인 header 코드를 기준으로 정렬 부모 자식 관계-->
+            <!-- <div style="margin: 0 auto; width: 1130px;" >-->
+            <!-- 속성명: 속성값; 속성이 여러개면 ;으로 구분-->
+            <!-- Html파일에서 Css 구현 = 인라인스타일 / html 인데 디자인까지? 지저분한데..-->
+            <div>
+                <div style="display: inline-block;">네이버를시작페이지로</div>
+                <div style="display: inline-block;">쥬니어네이버 </div>
+                <span>헤피빈</span>
+                <!--span은 display: inline;이 기본-->
+            </div>
+            <div id="header_Search">
+                <a href="https://www.naver.com">
+                    <span class="blind">네이버</span>
+                    <h1 id="header_Logo"></h1>
+                    <!-- div가아니지만 비슷하게 작동 display block이 적용됨-->
+                    <!-- a태그는 링크 밑줄을 속성태그 태그뒤는 속성-->
+                </a>
+                <h2 class="blind">검색창</h2>
+                <fieldset>
+                    <!--클래스는 " "를 통해 여러클래스를 적용가능-->
+                    <legend class="blind">검색</legend>
+                    <input /> 
+                    <button>
+                        <span class="blind">검색</span> 
+                        <span id="search-image"></span>
+                    </button>
+                    <!--            
+                        <input type="checkbox" />
+                        <input type="radio" name="group"/>
+                        <input type="radio" name="group"/>
+                        <input type="radio" name="group"/>
+                        <textarea />
+                        -->
+                </fieldset>
+            </div>
+        </div>
+    </header>
+    <div>
+        <ul>
+            <!--unordered list-->
+            <!-- ol은 ordered list 텍스트앞에 번호가 붙는다.-->
+            <li>메일</li>
+            <!--list item-->
+            <li>카페</li>
+            <li>블로그</li>
+            <li>지식iN</li>
+            <li>쇼핑</li>
+            <li>Pay</li>
+            <li>TV</li>
+            <li>사전</li>
+            <li>뉴스</li>
+            <li>증권</li>
+            <li>지도</li>
+            <li>영화</li>
+            <li>VIBE</li>
+            <li>책</li>
+            <li>웹툰</li>
+        </ul>
+    </div>
+    <div>
+        <h3>뉴스스탠드
+            <ul>
+                <li><img src="./newsstand/서울경제.png" alt="서울경제"> </li>
+                <!--alt는 설명 이미지를 보지못하는경우 해석-->
+                <li> </li>
+                <li> </li>
+                <li> </li>
+                <li> </li>
+            </ul>
+        </h3>
+        <h4>로그인</h4>
+        <h5>뉴스</h5>
+        <h6>법률</h6>
+        <h7>쇼핑</h7>
+    </div>
+    <footer>
+        <!-- div태그에 이름이 붙어있는 것 몇가지가 있음 dib + id-->
+        <div>공지사항</div>
+        <div>Creators</div>
+        <div>회사소개</div>
+    </footer>
+</body>
+
+</html>
+
+<parent>
+    <children>
+        <grandchildren>
+        </grandchildren>
+    </children>
+    </parnet>

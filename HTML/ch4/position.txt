@@ -1,0 +1,11 @@
+position의 기본세팅은 static이다.
+
+position 속성
+position의 basic세팅은 staitc이다
+relative - 내위치 기준 이동
+absolute - 상대적(relative)과 반대 / 가장가까운 조상(조상의 position이 static아닌 경우)의 
+position설정 기준으로한 포지션
+
+조상들이 모두 satic이면 결국 전체화면을 기준으로 한다.
+
+fixed - Scroll위치와 상관없이 뷰포트(현재 보이는 화면)을 조상으로 위치함 선언 위치 상관없음

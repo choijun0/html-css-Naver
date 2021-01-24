@@ -2,8 +2,8 @@
 
 일반적 통념
 document.head.parentNode.removeChilde(document.head);
-문서 head의 자식을 지웠더니 CSS가 없어짐
--> CSS는주로 head에 구현
+문서 head의 자식을 지웠더니 css가 없어짐
+-> css는주로 head에 구현
 
 지식인에 준비하지말고 구글에 질문하자. 토익공부!
 

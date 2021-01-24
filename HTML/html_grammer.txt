@@ -1,0 +1,11 @@
+1. block format context : 블록들간의 서식 문맥
+2. 쌓임맥락
+
+MBN.web.docs
+https://developer.mozilla.org/ko/
+컨테이닝 블록의 모든 것
+
+
+
+//잡다한것
+display: inline; 인 경우는 자동으로 사이즈를 맞춰준다. width, height수정이 씹힌다.
