@@ -1,0 +1,2 @@
+1. line-height: px; //font size와 상관없이 높이를 고정(=폰트 사이즈가 주는게아니라 높이가 고정됨 폰트는 오버플로우됨)
+2. letter-spacing: px; //글자수 사이 간격

@@ -1,0 +1,150 @@
+<!doctype html>
+<html lang="ko">
+<!-- 한글속성 ko-->
+
+<head>
+    <meta charset="utf-8">
+    </meta>
+    <title>NAVER-Clone</title>
+    <link rel="shortcut icon" type="image/x-icon" href="./logo/favicon.ico">
+    <link rel="stylesheet" href="./Naver.css">
+    <!--html파일이 왕이다 = css파일의 조내여부를 html파일에 알린다.-->
+</head>
+
+<body>
+    <header>
+        <!--<div id="fixed">고정</div>-->
+        <!-- Division 가로줄 전체를 차지한다.-->
+        <div class="special_bg">
+            <div class="group_flex">
+                <div class="logo_area">
+                    <div class="logo_default">
+                        <a href="https://www.naver.com" class="header_logo">
+                            <span class="blind">네이버</span>
+                            <h1 class="header_Logo"></h1>
+                            <!-- div가아니지만 비슷하게 작동 display block이 적용됨-->
+                            <!-- a태그는 링크 밑줄을 속성태그 태그뒤는 속성-->
+                        </a>
+                    </div>
+                </div>
+                <div id="service_area" class="service_area">
+                    <a href="https://help.naver.com/support/contents/contents.help?serviceNo=1074&categoryNo=16719"
+                        class="naver_set_home, link_set">네이버를 시작페이지로</a>
+                    <i class="sa_bar"></i>
+                    <a href="https://jr.naver.com/" class="link_jrnaver">
+                        <i class="ico_jrnaver"></i>
+                        <span class="blind">쥬니어네이버</span>
+                    </a>
+                    <a href="https://happybean.naver.com/" class="link_happybean">
+                        <i class="ico_happybean"></i>
+                        <span class="blind">해피빈</span>
+                    </a>
+                    <!--span은 display: inline;이 기본-->
+                </div>
+                <div id="header_Search">
+                    <div class="search_area">
+                        <h2 class="blind">검색창</h2>
+                        <fieldset>
+                            <!--클래스는 " "를 통해 여러클래스를 적용가능-->
+                            <legend class="blind">검색</legend>
+                            <input />
+                            <a href="#" id="ke_kbd_btn" class="btn_keyboard">
+                                <span class="blind">한글 입력기</span>
+                                <i class="ico_keyboard"></i> 
+                            </a>
+                            <a href="#" id="nautocompelete" class="btn_arw">
+                                <span class="blind">자동완성 레이어</span>
+                                <i class="ico_arr"></i> 
+                            </a>
+                            <button>
+                                <span class="blind">검색</span>
+                                <span id="search-image"></span>
+                            </button>
+                            <!--            
+                            <input type="checkbox" />
+                            <input type="radio" name="group"/>
+                            <input type="radio" name="group"/>
+                            <input type="radio" name="group"/>
+                            <textarea />
+                            -->
+                        </fieldset>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <nav>
+            <div id="My_Favorite">
+                <div class="center-align">
+                    <ul>
+                        <!--unordered list-->
+                        <!-- ol은 ordered list 텍스트앞에 번호가 붙는다.-->
+                        <li>
+                            <a href="">
+                                <i class="ico_mail"></i>
+                                <span style="color: #03c75a;">메일</span>
+                            </a>
+                        </li>
+                        <!--list item-->
+                        <li><a href=""><span style="color: #03c75a;">카페</span></a></li>
+                        <li><a href=""><span style="color: #03c75a;">블로그</span></a></li>
+                        <li><a href=""><span style="color: #03c75a;">지식iN</span></a></li>
+                        <li><a href=""><span style="color: #03c75a;">쇼핑</span></a></li>
+                        <li><a href=""><span style="color: #03c75a;">Pay</span></a></li>
+                        <!--list item-->
+                        <li><a href="">
+                                <i class="ico_tv"></i>
+                                <span style="color: #03c75a;">TV</span>
+                            </a>
+                        </li>
+                    </ul>
+                    <ul>
+                    <li><a href=""><span style=" color: #000;">사전</span></a></li>
+                        <li><a href=""><span style="color: #000;">뉴스</span></a></li>
+                        <li><a href=""><span style="color: #000;">증권</span></a></li>
+                        <!--list item-->
+                        <li><a href=""><span style="color: #000;">부동산</span></a></li>
+                        <li><a href=""><span style="color: #000;">지도</span></a></li>
+                        <li><a href=""><span style="color: #000;">영화</span></a></li>
+                        <li><a href=""><span style="color: #000;">VIBE</span></a></li>
+                        <li><a href=""><span style="color: #000;">책</span></a></li>
+                        <li><a href=""><span style="color: #000;">웹툰</span></a></li>
+                    </ul>
+                    <a href="#" class="btn_more" style="padding: 11px 0; text-decoration: none;">더보기</a>
+                    </a> 
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <div>
+        <h3>뉴스스탠드
+            <ul>
+                <li><img src="./newsstand/서울경제.png" alt="서울경제"> </li>
+                <!--alt는 설명 이미지를 보지못하는경우 해석-->
+                <li> </li>
+                <li> </li>
+                <li> </li>
+                <li> </li>
+            </ul>
+        </h3>
+        <h4>로그인</h4>
+        <h5>뉴스</h5>
+        <h6>법률</h6>
+        <h7>쇼핑</h7>
+    </div>
+    <footer>
+        <!-- div태그에 이름이 붙어있는 것 몇가지가 있음 dib + id-->
+        <div>공지사항</div>
+        <div>Creators</div>
+        <div>회사소개</div>
+    </footer>
+</body>
+
+</html>
+
+<parent>
+    <children>
+        <grandchildren>
+        </grandchildren>
+    </children>
+    </parnet>

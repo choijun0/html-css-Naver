@@ -1,0 +1,354 @@
+/*부모태그의 CSS는 자식태그에도 영향을 미친다. 
+Castcading style sheet*/
+/* 선택자(selector)  css 주석 표기법*/
+
+*{
+    /*모든 테그들에 공통적용*/
+   
+}
+html, body{
+    /*기본제공 margin padding 제거*/
+    margin: 0;
+    padding: 0;
+    font-family: -apple-system,BlinkMacSystemFont,"Malgun Gothic","맑은 고딕",helvetica,"Apple SD Gothic Neo",sans-serif;
+}
+
+div#fixed{
+    position: fixed; /*absolute와 비슷한 배치*/ 
+    top: 50px;
+    right: 50px; 
+    display: inline-block;
+    width: 100px;
+    height: 100px;
+    border: 1px solid black;
+    border-radius: 50px;
+
+}
+/*div테그는 생략가능하지만 header 테그등은 생략불가*/
+#header{
+    position: relative;
+    background-color: #fff;
+    z-index: 2000;
+}
+
+/*1st*/
+#service_area{
+    position: absolute;
+    top: 12px;
+    right: 27px; 
+    /* float: right; float은 둥둥뜬다는 의미를 지닌다. 그렇다고 다른 컨텐츠랑 겹쳐지는 것은 아니다.*/
+}
+#service_area a{
+    text-decoration: none;
+}
+
+#service_area span:first-child{
+    float: left;
+    font-size: 11px;
+    color: #404040;
+}
+
+div#header_Search > a{
+    text-decoration: none;
+}
+
+
+/*검색창*/
+div#header_Search fieldset{ /*자식이여도 자손 호출을 할 수 있음*/
+    width: 582px;
+    height: 52px;
+    display: inline-block; /*기본값인 block을 바꿔즘*/
+    margin-left: 0px; /*up right bottom left / clock direction*/  
+    margin-right: 0px;
+    border: 2px solid #19ce60; /*2px 2px 2px 2px = 2px solid*/
+    padding: 0;
+    vertical-align: middle;
+    position: relative; /*검색 버튼에 기준재시*/
+}
+div#header_Search fieldset input{
+    border: none;
+    outline: none;
+    width: 444px;
+    height: 24px;
+    padding: 13px 15px;
+    margin: 1px;
+    font-size: 18px;
+    font-weight: 700;
+    vertical-align: middle;
+}
+
+div#header_Search fieldset button{
+    width: 56px;
+    height: 56px;
+    border: none;
+    padding: 0;
+    background:#03cf5d;
+    position: absolute;
+    top: -2px;
+    right: 0;
+    box-sizing: border-box;
+}
+
+span#search-image{
+    background: url(./UI_Image.png);
+    background-position: -180px -386px; /*좌상단 0,0 우하단 -n, -m (n,m은 양수)*/
+    background-repeat: no-repeat;
+    display: inline-block;
+    width: 22px;
+    height: 22px;
+    margin: 17px; /*정확히 정중앙에 위치시키기기 위해 상우하좌 알맞은 margin설정*/ 
+} 
+
+/*2nd*/
+nav{
+    height: 52px;
+    border-bottom: 1px solid #e4e8eb;
+}
+nav ul{
+    display: table;
+    float: left;
+    margin: 0; 
+    padding: 11px 0 11px 0; 
+    list-style: none;
+}
+nav ul:first-child{ /*유지보수측면에서 최악의 방법 / %나중에 수정% */
+    height: 30px;
+}
+nav ul:nth-child(2){
+    margin-left: 18px;
+    height: 30px;
+}
+
+/*css우선순위 important > inline style attribute > id > class & 다른attribute > tag element*/
+nav ul li{ /*해당영역이 하니의 css라할때 tag3개 */
+    float: left;
+    margin-left: 18px;
+    font-size: 15px;
+    line-height: 30px;
+    font-weight: 700;
+    letter-spacing: -.3px;
+}
+nav ul li:first-child{ /*tag 3개 + 다른 attribute 따라서 해당 내용이 우선순위가 높다.
+    li first child의 경우는 margin-left에 대해 아래내용이 적용됨*/
+    margin-left: 0px;
+}
+
+nav ul li a{
+    text-decoration: none;
+}
+
+/*class*/
+.ico_mail
+{
+    display: inline-block;
+    width: 21px;
+    height: 21px;
+    background: url(./UI_Image.png);
+    background-position: -228px -386px;
+    background-repeat: no-repeat;
+    vertical-align: top;
+    margin: 3px 0 0 0;
+}
+.ico_tv{
+    display: inline-block;
+    width: 12px;
+    height: 14px;
+    background: url(./UI_Image.png);
+    background-position: -256px -212px;
+    background-repeat: no-repeat;
+    vertical-align: top;
+    margin: 9px 0 0 0;
+}
+.center-align /*html 파일의 특정 div를 id로 파악함*/
+{
+   margin: 0 auto; 
+   width: 1130px; /*px(pixel)은 상대적인 단위 모니터 해상도에 따라 수가다름*/
+}
+/*클레스 .클래스이름*/
+.blind {
+    position: absolute;
+    clip: rect(0 0 0 0);
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+}
+.special_bg{
+    position: relative;
+    height: 160px;
+    background-color: #fff;
+    border-bottom: 1px solid #e4e8eb;
+}
+.group_flex{
+    position: relative;
+    width: 1130px;
+    height: 100%;
+    margin: 0 auto;
+    padding: 0 30px;
+}
+.logo_area{
+    position: relative;
+    height: 100%;
+}
+.logo_default{
+    position: absolute;
+    top: 50%;
+    left: -9px;
+    margin-top: -32px;
+}
+.header_logo{
+    width: 222px;
+    height: 52px;
+    display: inline-block; /*기본값인 block을 바꿔즘*/
+    background-image: url(./UI_Image.png);
+    /*background-position: 0px 0px; X , Y*/
+    background-repeat: no-repeat;
+    /*image, position, repeat순으로 입력가능*/
+    background: url(./UI_Image.png) 0px -158px no-repeat;
+    background-size: 440px 410px; /*사이즈강제!!!!!!!!!!!!!!*/
+    text-indent: 100%; /*텍스트 들여쓰기 100%면 이미지 뒤에 오버플로우*/
+    overflow: hidden;  /*오버플로우는 숨긴다.*/
+    vertical-align: top;
+    position: relative;
+    content: '';
+}
+
+.service_area {
+    position: absolute;
+    top: 12px;
+    right: 27px;
+}
+.search_area {
+    position: absolute;
+    top: 50%;
+    left: 268px;
+    margin-top: -28px;
+}
+
+.service_area_font_set{
+    font-size: 12px;
+    line-height: 16px;
+    color: #202020;
+    font-family: -apple-system,BlinkMacSystemFont,"Malgun Gothic","맑은 고딕",helvetica,"Apple SD Gothic Neo",sans-serif;
+}
+.link_set{
+    float: left;
+    font-size: 11px;
+    color: #404040;
+}
+.link_set:after{
+    display: inline-block;
+    background-image: url(./UI_Image.png);
+    background-position: -382px -213px;
+    background-repeat: no-repeat;
+    background-size: 440px 410px;
+    width: 26px;
+    height: 26px;
+    vertical-align: top;
+    content: '';
+    margin: -3px 0 0 3px;
+}
+.link_jrnaver{
+    float: left;
+}
+.link_happybean{
+    float: left;
+    margin-left: 6px;
+}
+.ico_jrnaver{
+    display: inline-block;
+    width: 60px;
+    height: 10px;
+    background-image: url(./UI_Image.png);
+    background-position: -333px -267px;
+    background-repeat: no-repeat;
+    vertical-align: top;
+    margin: 3px;
+}
+.ico_happybean{
+    display: inline-block;
+    width: 34px;
+    height: 11px;
+    background-image: url(./UI_Image.png);
+    background-position: -257px -308px;
+    background-repeat: no-repeat;
+    vertical-align: top;
+    margin: 3px 3px 2px;
+}
+.sa_bar{
+    float: left;
+    width: 1px;
+    height: 10px;
+    margin: 3px 7px;
+    background-color: #e4e8eb;
+}
+.service_area:after { /*display: table; table-layout: fixed; 들이 자식들의 float:left의 연속사용을 가능하게 하느데 아직원리를 잘 모르겠음*/
+    content: "";
+    display: table;
+    table-layout: fixed;
+    clear: both;
+}
+.btn_keyboard{
+    position: absolute;
+    top: 0;
+    right: 84px;
+    bottom: 0;
+    width: 36px;
+    z-index: 400;
+}
+.ico_keyboard{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    display: inline-block;
+    width: 20px;
+    height: 12px;
+    background-image: url(./UI_Image.png);
+    background-position: -420px -248px;
+    background-repeat: no-repeat;
+    vertical-align: top;
+    margin: -6px 0 0 -10px;
+}
+.btn_arw{
+    position: absolute;
+    top: 0;
+    right: 64px;
+    bottom: 0;
+    width: 22px;
+}
+.ico_arr{
+    display: inline-block;
+    width: 10px;
+    height: 5px;
+    background-image: url(./UI_Image.png);
+    background-position: -404px -258px;
+    background-repeat: no-repeat;
+    vertical-align: top;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin: -2px 0 0 -5px;
+}
+.btn_more{
+    float: left;
+    min-width: 70px;
+    margin-left: 17px;
+    font-size: 13px;
+    line-height: 30px;
+    color: #202020;
+    text-align: right;
+}
+.btn_more::after{
+    display: inline-block;
+    width: 11px;
+    height: 7px;
+    background-image: url(./UI_Image.png);
+    background-position: -319px -258px;
+    background-repeat: no-repeat;
+    vertical-align: top;
+    content: '';
+    margin-left: 7px;
+    vertical-align: 2px;
+}
+
+/*css는 속성을 외우는 방향이 어쩔수없이 공부되어야한다.*/

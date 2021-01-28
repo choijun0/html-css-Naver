@@ -1,0 +1,325 @@
+<!doctype html>
+<html lang="ko">
+<!-- 한글속성 ko-->
+
+<head>
+    <meta charset="utf-8">
+    </meta>
+    <title>NAVER-Clone</title>
+    <link rel="shortcut icon" type="image/x-icon" href="./logo/favicon.ico">
+    <link rel="stylesheet" href="./Naver.css">
+    <!--html파일이 왕이다 = css파일의 조내여부를 html파일에 알린다.-->
+</head>
+
+<body>
+    <header>
+        <!--<div id="fixed">고정</div>-->
+        <!-- Division 가로줄 전체를 차지한다.-->
+        <div class="special_bg">
+            <div class="group_flex">
+                <div class="logo_area">
+                    <div class="logo_default">
+                        <a href="https://www.naver.com" class="header_logo">
+                            <span class="blind">네이버</span>
+                            <h1 class="header_Logo"></h1>
+                            <!-- div가아니지만 비슷하게 작동 display block이 적용됨-->
+                            <!-- a태그는 링크 밑줄을 속성태그 태그뒤는 속성-->
+                        </a>
+                    </div>
+                </div>
+                <div id="service_area" class="service_area">
+                    <a href="https://help.naver.com/support/contents/contents.help?serviceNo=1074&categoryNo=16719"
+                        class="naver_set_home, link_set">네이버를 시작페이지로</a>
+                    <i class="sa_bar"></i>
+                    <a href="https://jr.naver.com/" class="link_jrnaver">
+                        <i class="ico_jrnaver"></i>
+                        <span class="blind">쥬니어네이버</span>
+                    </a>
+                    <a href="https://happybean.naver.com/" class="link_happybean">
+                        <i class="ico_happybean"></i>
+                        <span class="blind">해피빈</span>
+                    </a>
+                    <!--span은 display: inline;이 기본-->
+                </div>
+                <div id="header_Search">
+                    <div class="search_area">
+                        <h2 class="blind">검색창</h2>
+                        <fieldset>
+                            <!--클래스는 " "를 통해 여러클래스를 적용가능-->
+                            <legend class="blind">검색</legend>
+                            <input />
+                            <a href="#" id="ke_kbd_btn" class="btn_keyboard">
+                                <span class="blind">한글 입력기</span>
+                                <i class="ico_keyboard"></i>
+                            </a>
+                            <a href="#" id="nautocompelete" class="btn_arw">
+                                <span class="blind">자동완성 레이어</span>
+                                <i class="ico_arr"></i>
+                            </a>
+                            <button>
+                                <span class="blind">검색</span>
+                                <span id="search-image"></span>
+                            </button>
+                            <!--            
+                            <input type="checkbox" />
+                            <input type="radio" name="group"/>
+                            <input type="radio" name="group"/>
+                            <input type="radio" name="group"/>
+                            <textarea />
+                            -->
+                        </fieldset>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <nav>
+            <div id="My_Favorite">
+                <div class="center-align">
+                    <ul>
+                        <!--unordered list-->
+                        <!-- ol은 ordered list 텍스트앞에 번호가 붙는다.-->
+                        <li>
+                            <a href="">
+                                <i class="ico_mail"></i>
+                                <span style="color: #03c75a;">메일</span>
+                            </a>
+                        </li>
+                        <!--list item-->
+                        <li><a href=""><span style="color: #03c75a;">카페</span></a></li>
+                        <li><a href=""><span style="color: #03c75a;">블로그</span></a></li>
+                        <li><a href=""><span style="color: #03c75a;">지식iN</span></a></li>
+                        <li><a href=""><span style="color: #03c75a;">쇼핑</span></a></li>
+                        <li><a href=""><span style="color: #03c75a;">Pay</span></a></li>
+                        <!--list item-->
+                        <li><a href="">
+                                <i class="ico_tv"></i>
+                                <span style="color: #03c75a;">TV</span>
+                            </a>
+                        </li>
+                    </ul>
+                    <ul>
+                        <li><a href=""><span style=" color: #000;">사전</span></a></li>
+                        <li><a href=""><span style="color: #000;">뉴스</span></a></li>
+                        <li><a href=""><span style="color: #000;">증권</span></a></li>
+                        <!--list item-->
+                        <li><a href=""><span style="color: #000;">부동산</span></a></li>
+                        <li><a href=""><span style="color: #000;">지도</span></a></li>
+                        <li><a href=""><span style="color: #000;">영화</span></a></li>
+                        <li><a href=""><span style="color: #000;">VIBE</span></a></li>
+                        <li><a href=""><span style="color: #000;">책</span></a></li>
+                        <li><a href=""><span style="color: #000;">웹툰</span></a></li>
+                    </ul>
+                    <a href="#" class="btn_more" style="padding: 11px 0; text-decoration: none;">더보기</a>
+                    </a>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <div id="container" role="main">
+        <div id="NM_INT_LEFT">
+            <div id="veta_top">
+                <span class="blind">메인 광고</span>
+                <div class="AD"></div>
+            </div>
+            <div id="newsstand">
+                <span class="blind">뉴스스탠드</span>
+                <div id="NM_newsstand_head">연합뉴스</div>
+                <div id="NM_newsstand_Title">
+                    <span>뉴스스탠드</span> 
+                </div>
+                <div id="NM_newsstand_view_container">
+                    <div class="tile_view">
+                        <div id="frame_area">
+                            <i class="line to_right1" style="top: 65px;"></i>
+                            <i class="line to_right2" style="top: 130px;"></i>
+                            <i class="line to_right3" style="top: 195px;"></i>
+                            <i class="line to_bottom1" style="left: 124px;"></i>
+                            <i class="line to_bottom2" style="left: 248px;"></i>
+                            <i class="line to_bottom3" style="left: 372px;"></i>
+                            <i class="line to_bottom4" style="left: 496px;"></i>
+                            <i class="line to_bottom5" style="left: 620px;"></i>
+                        </div>
+                        <ul id="newsstand_list">
+                            <li> 
+                                <span class="blind">데일리안</span>
+                                <a href="#">
+                                    <img src="https://s.pstatic.net/static/newsstand/2020/logo/light/0604/368.png"></img>
+                                </a>
+                            </li>
+                            <li> 
+                                <span class="blind">매일경제</span>
+                                <a href="#">
+                                    <img src="https://s.pstatic.net/static/newsstand/2020/logo/light/0604/009.png"></img>
+                                </a>   
+                            </li>
+                            <li> 
+                                <span class="blind">동아일보</span>
+                                <a href="#">
+                                    <img src="https://s.pstatic.net/static/newsstand/2020/logo/light/0604/020.png"></img>
+                                </a>
+                            </li>
+                            <li> 
+                                <span class="blind">연합뉴스TV</span>
+                                <a href="#">
+                                    <img src="https://s.pstatic.net/static/newsstand/2020/logo/light/0604/422.png"></img>
+                                </a>
+                            </li>
+                            <li> 
+                                <span class="blind">동아사이언스</span>
+                                <a href="#">
+                                    <img src="https://s.pstatic.net/static/newsstand/2020/logo/light/0604/363.png"></img>
+                                </a>
+                            </li>
+                            <li> 
+                                <span class="blind">YTN사이언스</span>
+                                <a href="#">
+                                    <img src="https://s.pstatic.net/static/newsstand/up/2020/0922/nsd152336602.png"></img>
+                                </a>
+                            </li>
+                            <li> 
+                                <span class="blind">한계례</span>
+                                <a href="#">
+                                    <img src="https://s.pstatic.net/static/newsstand/2020/logo/light/0604/028.png"></img>
+                                </a>
+                            </li>
+                            <li> 
+                                <span class="blind">SBS</span>
+                                <a href="#">
+                                    <img src="https://s.pstatic.net/static/newsstand/up/2020/1229/nsd165811867.png"></img>
+                                </a>
+                            </li>
+                            <li> 
+                                <span class="blind">MBN</span>
+                                <a href="#">
+                                    <img src="https://s.pstatic.net/static/newsstand/2020/logo/light/0604/057.png"></img>
+                                </a>
+                            </li>
+                            <li> 
+                                <span class="blind">MBC</span>
+                                <a href="#">
+                                    <img src="https://s.pstatic.net/static/newsstand/2020/logo/light/0604/214.png"></img>
+                                </a>
+                            </li>
+                            <li> 
+                                <span class="blind">e대한경제</span>
+                                <a href="#">
+                                    <img src="https://s.pstatic.net/static/newsstand/up/2020/1011/nsd205146413.png"></img>
+                                </a>
+                            </li>
+                            <li> 
+                                <span class="blind">아시아경제</span>
+                                <a href="#">
+                                    <img src="https://s.pstatic.net/static/newsstand/2020/logo/light/0604/277.png"></img>
+                                </a>
+                            </li>
+                            <li> 
+                                <span class="blind">일간스포츠</span>
+                                <a href="#">
+                                    <img src="https://s.pstatic.net/static/newsstand/2020/logo/light/0604/241.png"></img>
+                                </a>
+                            </li>
+                            <li> 
+                                <span class="blind">헤럴드경제</span>
+                                <a href="#">
+                                    <img src="https://s.pstatic.net/static/newsstand/2020/logo/light/0604/016.png"></img>
+                                </a>
+                            </li>
+                            <li> 
+                                <span class="blind">프레시안</span>
+                                <a href="#">
+                                    <img src="https://s.pstatic.net/static/newsstand/2020/logo/light/0604/002.png"></img>
+                                </a>
+                            </li>
+                            <li> 
+                                <span class="blind">EBS</span>
+                                <a href="#">
+                                    <img src="https://s.pstatic.net/static/newsstand/up/2020/0803/nsd20247547.png"></img>
+                                </a>
+                            </li>
+                            <li> 
+                                <span class="blind">세계일보</span>
+                                <a href="#">
+                                    <img src="https://s.pstatic.net/static/newsstand/2020/logo/light/0604/022.png"></img>
+                                </a>
+                            </li>
+                            <li> 
+                                <span class="blind">연합뉴스TV</span>
+                                <a href="#">
+                                    <img src="https://s.pstatic.net/static/newsstand/2020/logo/light/0604/422.png"></img>
+                                </a>
+                            </li>
+                            <li> 
+                                <span class="blind">이투데이</span>
+                                <a href="#">
+                                    <img src="https://s.pstatic.net/static/newsstand/2020/logo/light/0604/922.png"></img>
+                                </a>
+                            </li>
+                            <li> 
+                                <span class="blind">매일경제</span>
+                                <a href="#">
+                                    <img src="https://s.pstatic.net/static/newsstand/2020/logo/light/0604/009.png"></img>
+                                </a>
+                            </li>
+                            <li> 
+                                <span class="blind">시사저널이코노미</span>
+                                <a href="#">
+                                    <img src="https://s.pstatic.net/static/newsstand/2020/logo/light/0604/975.png"></img>
+                                </a>
+                            </li>                        
+                            <li> 
+                                <span class="blind">아시아저널</span>
+                                <a href="#">
+                                    <img src="https://s.pstatic.net/static/newsstand/2020/logo/light/0604/920.png"></img>
+                                </a>
+                            </li>                        
+                            <li> 
+                                <span class="blind">아시아경제</span>
+                                <a href="#">
+                                    <img src="https://s.pstatic.net/static/newsstand/2020/logo/light/0604/277.png"></img>
+                                </a>
+                            </li>                       
+                             <li> 
+                                <span class="blind">인사이트코리아</span>
+                                <a href="#">
+                                    <img src="https://s.pstatic.net/static/newsstand/2020/logo/light/0604/807.png"></img>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="NM_INT_RIGHT">
+            <div id="column_fix_wrap">
+                <div id="da_brand">
+                </div>
+                <div id="sc_my">
+                </div>
+                <div id="timesquare">
+                </div>
+                <div id="veta_branding">
+                </div>
+                <div id="shopcast">
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--container-->
+
+
+    <footer>
+        <!-- div태그에 이름이 붙어있는 것 몇가지가 있음 dib + id-->
+        <div>공지사항</div>
+        <div>Creators</div>
+        <div>회사소개</div>
+    </footer>
+</body>
+
+</html>
+
+<parent>
+    <children>
+        <grandchildren>
+        </grandchildren>
+    </children>
+    </parnet>

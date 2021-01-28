@@ -1,0 +1,8 @@
+float 을사용하면 둥둥떠있는 느낌 하지만 겹칠수는없다.
+1. 자신과 형재라면 아래형재들이 밑으로 들어감
+
+clear: right;  //float right 와 겹치는 부분을 없애 밑 블록과 영역을 나눠준다. 
+
+2. 자식이 float을 사용하면 일반적으로 부모가 자식을 인식하지 못해 0x0이된다.
+그럼으로 부모를 블록포맷컨텍스트로 만들어 자식을 인식하게 해야한다.
+oveflow: auto 등등 https://developer.mozilla.org/ko/docs/Web/Guide/CSS/Block_formatting_context

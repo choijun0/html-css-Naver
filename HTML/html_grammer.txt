@@ -3,7 +3,8 @@
 
 MBN.web.docs
 https://developer.mozilla.org/ko/
-컨테이닝 블록의 모든 것
+컨테이닝 블록의 모든 것(이컴퓨터 북마크 html에 존재)
+https://developer.mozilla.org/ko/docs/Web/CSS/All_About_The_Containing_Block#%EC%BB%A8%ED%85%8C%EC%9D%B4%EB%8B%9D_%EB%B8%94%EB%A1%9D_%EC%8B%9D%EB%B3%84
 
 
 
