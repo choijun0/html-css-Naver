@@ -1,0 +1,8 @@
+기본적으로 후선언이 위에쌓인다.
+여기서 z-index를 사용하여 이순서를 바꿀수있다.
+
+쌓임맥락
+https://developer.mozilla.org/ko/docs/Web/CSS/CSS_Positioning/Understanding_z_index/The_stacking_context
+
+쌓임맥락안에 쌓인맥락이 존재할 수 있다.
+ex) 자식은 부모의 z-index를 넘어설 수 없다. 즉 자식과 부모는 독립적인 쌓임맥락을 가진다.

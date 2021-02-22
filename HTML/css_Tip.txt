@@ -42,3 +42,5 @@ postion: relative
 top 50%
 transform: translate(-50%) //이미지 자체의 크기 50%만큼 -해줌
 
+
+

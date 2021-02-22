@@ -7,12 +7,23 @@ document.head.parentNode.removeChilde(document.head);
 
 지식인에 준비하지말고 구글에 질문하자. 토익공부!
 
+@Block
+a코드의경우 padding도 클릭영역으로 인지하기때문에 padding 영역 설정이 중요하다.
+마진의 경우 마진끼리 겹칠경우 마진이 사라지는 현상이 가끔 발생함\
 
-style display
+@값
+수치계산 calc(100% / n) //픽셀이 딱나눠 떨어지지않는경우 자동계산처리해 반환해줌
+
+
+@display
 inline: 해당 영약에 존재하는 것들이 최소한의 공간을 차지, inline-block처럼 가로전체를 차지하지 않지만 
 너비및 높이를 custom지정이 불가하다.
 inline-block: 가로전체를 차지하지않고 높이 너비를 지정이 가능하다. 다른블록과 한 가로에 합쳐질수 있음
 block: 내용에 상관없이 해당구역이 가로전체를 차지한다.
 
-a코드의경우 padding도 클릭영역으로 인지하기때문에 padding 영역 설정이 중요하다.
-마진의 경우 마진끼리 겹칠경우 마진이 사라지는 현상이 가끔 발생함
+자식들이 inline-block일때 
+- 위치조정은 vectical-align으로 해줄수있다.
+- 정렬시 빈공간 버그가 생기는데 자식들에 인라인블록대신 float: left;를 넣어주면 해결된다.
+
+form과 a테그의 차이 
+form사용자의 input을바탕으로한 이동을 만들 수 있다. a는그냥고정링크
